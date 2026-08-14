@@ -64,10 +64,22 @@ svg text{font-family:'Montserrat',sans-serif}
 .hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center}
 .gradbar{height:4px;width:110px;background:linear-gradient(90deg,var(--gold),var(--violet));border-radius:4px;margin:26px 0}
 .big-quote{font-size:26px;font-weight:600;line-height:1.4;color:var(--lav);max-width:56ch}
+/* Margin Positive branding */
+.mp-badge{position:fixed;top:18px;right:22px;z-index:50;display:flex;align-items:center;gap:10px;background:rgba(11,16,38,.72);border:1px solid var(--hairline);border-radius:12px;padding:8px 14px 8px 8px;backdrop-filter:blur(6px)}
+.mp-mono{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,#E8C46B,#c98500);color:#0B1026;font-weight:900;font-size:15px;display:flex;align-items:center;justify-content:center;letter-spacing:-.02em}
+.mp-badge .t{line-height:1.15}
+.mp-badge .t b{display:block;font-size:12.5px;letter-spacing:.14em;color:var(--text)}
+.mp-badge .t span{font-size:9.5px;letter-spacing:.2em;color:var(--muted)}
+.slide::after{content:"Planned & conceptualized by Margin Positive LLC · © 2026";position:absolute;bottom:12px;right:24px;font-size:11px;letter-spacing:.09em;color:rgba(155,160,191,.5);pointer-events:none}
+@media(max-width:860px){.mp-badge{top:10px;right:10px;padding:6px 10px 6px 6px}.mp-badge .t b{font-size:11px}}
 </style>
 </head>
 <body data-palette="c98500,9085e9,199e70">
 <div class="tooltip" id="tt"></div>
+<div class="mp-badge" title="Planned & conceptualized by Margin Positive LLC">
+  <div class="mp-mono">M+</div>
+  <div class="t"><b>MARGIN POSITIVE</b><span>LLC</span></div>
+</div>
 
 <!-- 1 · COVER -->
 <section class="slide hero" id="cover">
